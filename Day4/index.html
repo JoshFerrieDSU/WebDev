@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            main p {
+                color: red;
+            }
+
+            main>p {
+                color: orange;
+            }
+
+            aside~p {
+                color: green;
+                
+            }
+            p {
+                color: steelblue;
+                border: 1px solid purple;
+            }
+            h1, h2, aside {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            article, main, aside{
+                border: 0px solid black;
+            }
+            article~p{
+                color: green;
+            }
+            #important{
+                color: rgb(28, 100, 42);
+                text-decoration: dashed;
+            }
+            .junk {
+                background-color: bisque;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+       <h1>Heading 0</h1>
+       <h2>Heading 1</h2>
+       <p>text 0</p>
+       <main>
+        <p>text 1</p>
+        <p>text 2</p>
+        <aside>
+            <p>text 3</p>
+            <article>
+                <p id="important">text 4</p>
+            </article>
+            <p class="junk">text 5</p>
+        </aside>
+       </main> 
+       <p class="junk">text 6</p>
+    </body>
+</html>
